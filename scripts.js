@@ -6,6 +6,13 @@ function newItem(){
     let inputValue = $('#input').val();
     let li = $('<li>${inputValue}</li>');
   
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      let list = $('#list');
+      list.appendChild(li);
+    }
+    
 //javascript
 //1. Adding a new item to the list of items: 
 let li = document.createElement("li");
